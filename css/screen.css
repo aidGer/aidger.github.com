@@ -115,9 +115,9 @@ h5 { font-size:100%; }
       z-index: 10;
       }
       
-      #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; color: }
-      #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
-      #panel-right span { color: #e49695; }
+      #panel-right { float:right; width:230px; height: 100%; padding: 15px 10px 10px 10px; margin: auto; }
+      #panel-right-inside {border-left: 1px solid #ccc; height: 100%; padding: 0 0 0 16px; margin: auto;}
+      #panel-right span { color: #aaa; font-weight: bold; }
       #panel-right p {margin: 0;}
       
       #main {
@@ -129,11 +129,12 @@ h5 { font-size:100%; }
       }
       
       span.null-zwo {
-		background: #0c0;
-		border: 2px #0c0;
+		background: forestgreen;
+		color: #eee;
+		border: 2px forestgreen;
 		border-radius: 2px;
 		
-		text-shadow: 0;
+		text-shadow: none;
 		padding: 1px 2px;
 		margin-left: 5px;
       }
