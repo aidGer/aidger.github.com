@@ -3,19 +3,20 @@ body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legen
 body { 
   padding: 0; 
   background: #fff; 
-  font: 0.8em/1.5 "arial",sans-serif; 
+  /* font: 0.8em/1.5 "arial",sans-serif;  */
+  font: 0.8em/1.5 "Droid Sans", "arial", sans-serif;
   color: #303030; 
   text-align: center; 
 }
 
 /* obecne odkazy --------------------------------------------------------------- */
-a {color:#204a87;}
+a {color:#204a87; }
 a:link {color:#204a87;}
 a:hover {color:#204a87; text-decoration: none;}
 
 /* nadpisy --------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { margin:15px 0 7px 0; }
-h1 { font-size:200%; }
+h1, h2, h3, h4, h5, h6 { margin:15px 0 7px 0; text-shadow: 2px 2px 2px #aaa; }
+h1 { font-size:200%; color:#204a87; }
 h2 { font-size:170%; font-weight: normal;}
 h3 { font-size:105%; border-bottom: 1px solid #ddd;}
 h4 { font-size:120%; }
@@ -42,7 +43,7 @@ h5 { font-size:100%; }
   	#header { position:relative; background: #303030; margin-bottom: 20px; }
   
       #logo {
-        font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+        font-family: 'Droid Sans', 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
         position: relative; 
         overflow: hidden; 
         width: 250px; height: 108px;
@@ -95,6 +96,7 @@ h5 { font-size:100%; }
         color: #fff;
         background: #204a87; border-radius: 10px; border: #204a87 2px;
         padding: 10px 10px;
+        text-shadow: 1px 1px 1px #aaa;
       }
       
       /* The nice box with introducing text and news */
@@ -109,7 +111,7 @@ h5 { font-size:100%; }
       .content {
       float: left; 
       padding: 12px 0 12px 10px;
-      width:500px;
+      width:400px;
       z-index: 10;
       }
       
@@ -119,7 +121,21 @@ h5 { font-size:100%; }
       #panel-right p {margin: 0;}
       
       #main {
-      padding: 0 37px
+		padding: 0 37px 20px 37px;
+      }
+      
+      #main a {
+		text-shadow: 1px 1px 1px #ccc;
+      }
+      
+      span.null-zwo {
+		background: #0c0;
+		border: 2px #0c0;
+		border-radius: 2px;
+		
+		text-shadow: 0;
+		padding: 1px 2px;
+		margin-left: 5px;
       }
       
       #footer {
