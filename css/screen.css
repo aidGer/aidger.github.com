@@ -94,7 +94,11 @@ h5 { font-size:100%; }
       
       #navigation a:hover {
         color: #fff;
-        background: #204a87; border-radius: 10px; border: #204a87 2px;
+        background: #204a87; 
+        border-radius: 10px; 
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border: #204a87 2px;
         padding: 10px 10px;
         text-shadow: 1px 1px 1px #aaa;
       }
@@ -102,7 +106,7 @@ h5 { font-size:100%; }
       /* The nice box with introducing text and news */
       
       /* set millions of background images */
-      .rbroundbox { width: 95%; margin: 1em auto; color: #fff; margin-bottom: 20px; background: #204a87; border-radius: 10px; border: #204a87 2px; }
+      .rbroundbox { width: 95%; margin: 1em auto; color: #fff; margin-bottom: 20px; background: #204a87; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border: #204a87 2px; }
       .rbcontent { margin: 0 7px; }
             
       .rbroundbox a { color: #fff; }
@@ -133,6 +137,8 @@ h5 { font-size:100%; }
 		color: #eee;
 		border: 2px forestgreen;
 		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
 		
 		text-shadow: none;
 		padding: 1px 2px;
