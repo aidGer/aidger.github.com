@@ -72,7 +72,7 @@ h5 { font-size:100%; }
       
       #navigation{
         position: absolute;
-        left: 270px;
+        left: 225px;
         line-height: 83px;
         display: block;
         height: 108px;
@@ -115,7 +115,7 @@ h5 { font-size:100%; }
       z-index: 10;
       }
       
-      #panel-right { float:right; width:230px; height: 100%; padding: 15px 10px 10px 10px; margin: auto; }
+      #panel-right { float:right; width:230px; height: 100%; padding: 15px 10px 10px 10px; margin: 15px auto; }
       #panel-right-inside {border-left: 1px solid #ccc; height: 100%; padding: 0 0 0 16px; margin: auto;}
       #panel-right span { color: #aaa; font-weight: bold; }
       #panel-right p {margin: 0;}
