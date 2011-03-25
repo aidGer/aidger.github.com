@@ -19,7 +19,7 @@ Homepage:
 * Kasten ersetzen mit Kasten über Gesamtseite mit Gradient von Blau zu Weiss
 * Screenshot zu groß und nicht lesbar
 * Features auf Homepage reduzieren
-* Weiss abschwächen (Richtung Grau)
+* Weiss abschwächen (Richtung Grau) (DONE)
 
 Features:
 * Statistiken werden nicht mehr automatisch geöffnet (DONE)
