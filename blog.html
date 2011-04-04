@@ -1,0 +1,27 @@
+---
+layout: default
+title: Entwicklerblog
+---
+
+<h1>Entwicklerblog</h1>
+
+{% for post in paginator.posts %}
+<div class="news clearfix">    
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="date">gepostet am {{post.date | date: '%d.%m.%Y'}}</div>
+    <div>
+    {{ post.content }}
+    </div>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div id="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{paginator.previous_page}}" class="previous">Vorherige</a>
+  {% endif %}
+  <span class="page_number ">Seite: {{paginator.page}} von {{paginator.total_pages}}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next ">Nächste</a>
+  {% endif %}
+</div>

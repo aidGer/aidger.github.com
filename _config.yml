@@ -1,0 +1,6 @@
+production: true
+lsi: true
+pygments: true
+exclude: ['todo.txt']
+paginate: 10
+future: true

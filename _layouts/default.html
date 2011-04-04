@@ -4,11 +4,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="content-language" content="de" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-    <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slimbox2.js"></script>
-    <link href="css/slimbox2.css" type="text/css" rel="stylesheet" />
+    <link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/slimbox2.css" type="text/css" rel="stylesheet" />
 
     <title>aidGer - {{ page.title }}</title>
   </head>
@@ -22,30 +19,45 @@
 
             <h1 id="logo"><a href="index.html">aidGer</a></h1>
 
-            <hr class="noscreen" />
-
             <div id="navigation">
-            <ul>
-              <li><a href="features.html">FEATURES</a></li>
-              <li><a href="screenshots.html">SCREENSHOTS</a></li>
-              <li><a href="download.html">DOWNLOAD</a></li>
-              <li><a href="development.html">ENTWICKLUNG</a></li>
-              <li><a href="about.html">ÜBER UNS</a></li>
-            </ul>
+                <ul>
+                  <li><a href="features.html">FEATURES</a></li>
+                  <li><a href="screenshots.html">SCREENSHOTS</a></li>
+                  <li><a href="download.html">DOWNLOAD</a></li>
+                  <li><a href="development.html">ENTWICKLUNG</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="about.html">ÜBER UNS</a></li>
+                </ul>
             </div>
-            <hr class="noscreen" />
-
         </div>
 
         <div id="main">
             {{ content }}
         </div>
 
-        </div>
-        <div id="footer">
-        <div id="footer-inside">
-        <p id="copyright">Copyright &copy; 2010 - <a href="/">aidGer Team</a> | <a href="about.html#impressum">Impressum</a></p>
+    </div>
 
-        </div><div style="clear: both;"></div></div>
+    <div id="footer">
+        <div id="footer-inside" class="clearfix">
+            <div id="copyright">Copyright &copy; 2010-2011 - <a href="/about.html">aidGer Team</a> | <a href="impressum.html">Impressum</a></div>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style" style="float: right; width: 110px;">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+                <a></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d8deaca308bc151"></script>
+            <!-- AddThis Button END -->
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- Load javascript last -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
   </body>
 </html>

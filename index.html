@@ -3,67 +3,27 @@ layout: default
 title: Ihre Hilfskraftverwaltung
 ---
 
-<div class="rbroundbox clearfix">
-    <div class="content">
-        <h1 style="color: #ccc">Willkommen bei aidGer</h1>
-        <p>Dem einfachen System zur Verwaltung ihrer Hilfskräfte.</p>
-        <p>Verwalten Sie ihre Veranstaltungen und Hilfskräfte bis zu den Details einzelner Beschäftigungen und Verträgen und behalten Sie durch die Vorgangserfassung immer einen Überblick darüber, was momentan bei ihnen passiert.</p>
-        <a href="features.html" class="light">Mehr Features</a> <a href="download.html" class="light">Downloads</a>
+<div style="border: 1px solid #bbb; border-radius:12px; background: #eee; padding-left: 10px;">
+    <p><strong>aidGer</strong> ist eine platformunabhängige Anwendung zur Verwaltung und Organisation von Hilfskräften und Budgets.</p>
+    <p>
+        <ul>
+            <li></li>
+            <li>Einfache Generierung von (anpassbaren) <strong>Berichten</strong></li>
+            <li>Unterstützung beim <strong>Controlling</strong></li>
+            <li>Verwaltung von <strong>Vorgängen</strong></li>
+        </ul>
+    </p>
+    <p><a href="features.html" class="light">Mehr Features</a> <a href="download.html" class="light">Download</a></p>
+</div>
+
+<h1>News</h1>
+
+{% for post in site.categories["news"] limit:5 %}
+    <div class="news">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="date">gepostet am {{ post.date | date: '%d.%m.%Y' }}</div>
+        <div class="excerpt">{{ post.content | html_truncatewords: 50 }}<br /><a href="{{ post.url }}">Mehr</a></div>
     </div>
-    <div id="panel-right"><div id="panel-right-inside">
-        <p><span>24. Oktober 2010</span><br />Release der Version 0.1.1 <a href="http://aidger.de/versions/show/11">Details</a></p>
-        <p><span>14. Juli 2010</span><br />Release der Version 0.1 <a href="http://aidger.de/versions/show/8">Details</a></p>
-    </div></div>
-</div>
+{% endfor %}
 
-<a href="img/welcomescreen.png" alt="Welcome Screen" rel="lightbox"><img src="img/welcomescreen.png" width="750px" height="408px" alt="Welcome Screen" /></a>
-
-<h4>Lassen Sie sich von der einfachen Bedienung und dem umfangreichen Funktionsumfang von aidGer überzeugen.</h4>
-
-<a name="features"></a>
-
-<div class="box">
-    <h3>Stammdatenverwaltung</h3>
-    <p>Einfaches Arbeiten mit den Daten ihrer Hilfskräfte, Veranstaltungen oder Beschäftigungen.
-    Egal ob Sie eine neue Arbeitskraft einstellen wollen oder den Vertrag einer anderen aufstocken wollen,
-    alles ist in wenigen einfachen Schritten geschafft.</p>
-</div>
-
-<div class="box">
-    <h3>Suche integriert</h3>
-    <p>Sie suchen verzweifelt unter tausenden Angestellten jemanden bestimmtes? Dank der in alle Anzeigen integrierten Suche
-    tippen Sie sich mit jedem Buchstaben näher an ihr Ziel heran.</p>
-</div>
-
-<div class="box">
-    <h3>Statistiken</h3>
-    <p>Bei jedem Start werden Sie von unserem Startbildschirm mit hilfreichen Statistiken sowie den letzten Vorgängen und Änderungen begrüßt. (Siehe Bild oben).</p>
-</div>
-
-<div class="box">
-    <h3>Verknüpfungen</h3>
-    <p>Durch hilfreiche Anzeigen sehen Sie z.B. sofort in welchen Veranstaltungen eine Hilfskraft beschäftigt ist und mit nur einem Klick bekommen Sie diese angezeigt.</p>
-</div>
-
-<div class="box">
-    <h3>Morgen weitermachen wo heute aufgehört wurde</h3>
-    <p>Stört es Sie auch, dass Sie am nächsten Tag vergessen haben, woran Sie gestern noch gearbeitet haben?
-    Dank der aktivierbaren Speicherung aller Reiter begrüßt Sie aidGer am morgen genauso wie Sie es am abend zuvor
-    verlassen haben.</p>
-</div>
-
-<div class="box">
-    <h3>Controlling</h3>
-    <p>Überprüfen Sie ganz einfach ob ihre Planungen mit der Realität übereinstimmen. Auf Abweichungen werden Sie sofort durch farbliche Markierungen hingewiesen.
-</div>
-
-<div class="box">
-    <h3>Berichte</h3>
-    <p>Mit wenigen Klicks generieren Sie sich ganz einfach Berichte, die z.B. alle gebuchten Stunden eines Semester anzeigen.
-    Sie brauchen das ganze aber nur für eine Veranstaltung? Fügen Sie einfach einen Filter hinzu und ihr Bericht kann angepasst neu generiert werden.</p>
-</div>
-
-<div class="box">
-    <h3>Anpassungsfähigkeit</h3>
-    <p>Finden Sie pink und rosa angenehmer als schwarz und weiss? Mit unseren anpassbaren Templates können Sie ihre Berichte ganz ihrem Geschmack anpassen.</p>
-</div>
+<div id="archive"><a href="#" class="light" style="color: #eee;">Zum Archiv</a></div>

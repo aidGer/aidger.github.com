@@ -8,7 +8,7 @@ Webseite generell:
 * Download in Navigation (DONE)
 * Bilder in Screenshots packen
 * "Über uns" mit Impressum (Impressumlink in Footer) (DONE)
-* CSS Gradient in Headerstreifen + Schatten zu Contentbereich
+* CSS Gradient in Headerstreifen + Schatten zu Contentbereich (DONE)
 * Kontaktmöglichkeit (DONE)
 * Externe Links auf Institut/SoPra (zusätzlich als extern kennzeichnen) (DONE)
 
@@ -18,7 +18,7 @@ Homepage:
 * Download neben "Mehr Features" (DONE)
 * Kasten ersetzen mit Kasten über Gesamtseite mit Gradient von Blau zu Weiss
 * Screenshot zu groß und nicht lesbar
-* Features auf Homepage reduzieren
+* Features auf Homepage reduzieren (DONE)
 * Weiss abschwächen (Richtung Grau) (DONE)
 
 Features:
