@@ -161,7 +161,7 @@ color: #b1b1b1;
   #copyright {
   float: left;
   }
-  
+
 /* Frontpage -------------------------------------------------------------------------- */
 .news { clear: both; margin-left: 20px;}
 .news .title a { font-size:170%; font-weight: normal; text-shadow: 2px 2px 2px #aaa; color:#303030;}
@@ -171,6 +171,10 @@ color: #b1b1b1;
 
 /* Blog -------------------------------------------------------------------------- */
 #pagination { text-align: center; margin-top: 20px;}
+
+/* Downloads --------------------------------------------------------------------- */
+#os { text-align: center; }
+#windows, #linux, #mac, #unstable { display: none; }
 
 /* Paragraphs -------------------------------------------------------------------- */
 p { margin:15px 0; line-height: 24px; font-size: 95%}
@@ -228,6 +232,7 @@ ul li a { text-decoration:underline; }
 
 /* Tables ---------------------------------------------------------------------- */
 table { margin:15px 0; border: 1px solid #cdcdcd; border-collapse:collapse; border-spacing:0; font-size:100%; width: 100%;}
+table.borderless { border: none; }
 th { text-align:center; font-weight:bold; border: 1px solid #cdcdcd;}
 th, td { padding:4px 6px; border: 1px solid #cdcdcd;}
 tr.table-top {background: #e5e5e5; font-weight: bold;}

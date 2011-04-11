@@ -7,27 +7,141 @@ title: Download
 
 <h3>Neueste Version: <b>1.0</b></h3>
 
-<table>
+<h2>Wählen Sie ihr Betriebssystem:</h2>
+
+<table id="os" class="borderless">
     <tr>
-        <th>Programm (.jar)</th>
-        <th>Quellcode (.zip)</th>
-        <th>Handbuch (.pdf)</th>
-    </tr>
-    <tr>
-        <td><a href="http://aidger.de/attachments/download/98/aidger-1.0.jar">Download</a></td>
-        <td><a href="http://aidger.de/attachments/download/99/aidger-src-1.0.zip">Download</a></td>
-        <td><a href="http://aidger.de/attachments/download/100/Handbuch.pdf">Download</a></td>
+        <td><a href="#windows" onclick="showDetails('windows'); return false;"><img src="/img/windowslogo.png" height="64" width="64" /><br />Windows</a></td>
+        <td><a href="#linux" onclick="showDetails('linux'); return false;"><img src="/img/linuxlogo.png" height="64" width="64" /><br />Linux</a></td>
+        <td><a href="#mac" onclick="showDetails('mac'); return false;"><img src="/img/macoslogo.png" height="64" width="64" /><br />Mac OS X</a></td>
     </tr>
 </table>
 
-<h2>Installation</h2>
+<div id="windows">
+    <h2>Systemvorraussetzungen</h2>
 
-<p>Zum Installieren von aidGer laden Sie sich einfach die Datei unter dem Punkt "Programm (.jar)" herunter. AidGer braucht im Prinzip keinen eigenen Ordner, da alle Einstellungen im Benutzerverzeichnis abgespeichert werden (siehe Handbuch). Deshalb können Sie die Datei z.B. einfach auf Ihrem Desktop ablegen und von dort aus per Doppelklick starten. Vorraussetzung dafür ist, dass Sie die Java-Laufzeitumgebung von Oracle installiert haben. Diese können Sie auch nachträglich <a href="http://www.java.com/de/download/" class="external">hier<span> (externer Link)</span> herunterladen.</a></p>
-<p>Unter Mac OS X oder Linux können Sie aidGer auch per Kommandozeile starten, falls ein Doppelklick nicht zum gewünschten Ergebnis führt. Führen Sie dazu einfach folgendes aus: <pre>java -jar aidger-1.0.jar</pre></p>
+        <p>Unterstützt wird <strong>aidGer</strong> auf Windows XP, Vista und 7 sowie Server 2003 und 2008. Auf anderen Windowsversionen kann <strong>aidGer</strong> durchaus funktionieren, dies wird von uns jedoch nicht sichergestellt.</p>
+        <p><strong>aidGer</strong> benötigt eine Java-Laufzeitumgebung mit mindestens Version 1.6 um ausgeführt werden zu könnep>n. Eine solche erhalten Sie zum Beispiel bei Oracle (<a href="http://java.com/de/download" class="external">hier<span> (externer Link)</span></a>)</p>
+        <p>Als Datenbanken unterstützt <strong>aidGer</strong> sowohl MySQL als auch Derby. Derby is dabei im Lieferumfang enthalten und kann sofort eingesetzt werden. Um stattdessen jedoch eine MySQL-Datenbank zu benutzen, benötigen Sie MySQL 5.0 oder höher. MySQL ist die empfohlene Datenbank.</p>
 
-<h2>Einrichtung</h2>
+    <h2>Downloads</h2>
 
-<p>Beim ersten Start von aidGer begrüßt Sie der Ersteinrichtungsassistent, der mit Ihnen die wichtigsten Einstellungen vornimmt. Das ist zum einen Ihr Name, den Sie ein einfach in der Form &lt;Vorname&gt; &lt;Nachname&gt; eingeben.</p>
-<p>Als nächstes folgen nun die Einstellungen zur Datenbankverbindung. Um aidGer nur auf Ihrem PC zu testen, belassen Sie einfach die bereits voreingestellten Werte und drücken solange auf "Weiter" bis der Assistent fertig ist.</p>
-<br />
-<p>Für eine ausführlichere Beschreibung und weitere Informationen konsultieren Sie bitte unser Handbuch oder kontaktieren uns unter den bei <a href="about.html">Über Uns</a> vorhandenen Emailaddressen.</p>
+        <table>
+            <tr>
+                <th>Programm (.jar)</th>
+                <th>Quellcode (.zip)</th>
+                <th>Handbuch (.pdf)</th>
+            </tr>
+            <tr>
+                <td><a href="http://aidger.de/attachments/download/98/aidger-1.0.jar">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/99/aidger-src-1.0.zip">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/100/Handbuch.pdf">Download</a></td>
+            </tr>
+        </table>
+
+        <a href="#unstable" onclick="$('#unstable').toggle(); return false;"> &gt;&gt; Instabile Versionen</a>
+        <div id="unstable">
+            <p>Um an eine instable Version von <strong>aidGer</strong> zu kommen gibt es mehrere Möglichkeiten.</p>
+            <ul>
+                <li>Die Versionsverwaltung von <strong>aidGer</strong>, siehe <a href="#">Link</a>,</li>
+                <li>Unseren Buildserver unter <a href="http://build.aidger.de">build.aidger.de</a>,</li>
+                <li>Oder kurz vor einem Release, eine der Betaversionen oder Releasecandidates im Downloadbereich unseres Issuetrackers <a href="http://aidger.de/files">hier</a></li>
+            </ul>
+        </div>
+
+    <h2>Anleitung</h2>
+
+        <p>Eine Installation ist nicht nötig. Starten Sie aidGer durch einen Doppelklick auf die heruntergeladene Datei. <br />
+        Beim ersten Start begrüßt Sie der Einrichtungsassistent und erlaubt Ihnen eine einfache Konfiguration der Datenbankverbindung und Ihres Namens.</p>
+
+        <p>Für mehr Informationen laden Sie sich das Handbuch herunter oder öffnen Sie es aus aidGer heraus über das Menü Hilfe -> Handbuch (rly?)</p>
+
+</div>
+
+<div id="linux">
+    <h2>Systemvorraussetzungen</h2>
+
+        <p>Unterstützt wird <strong>aidGer</strong> auf aktuellen Linux-Distributionen mit Linux 2.6 Kernel.</p>
+        <p>Zur Ausführung wird eine Java-Laufzeitumgebung mit Version 1.6 benötigt. Eine solche sollten Sie im Repository Ihrer Distribution finden. Unter Ubuntu/Debian z.B. entweder im Paket openjdk-6-jre für OpenJDK oder sun-java6-jre für die offizielle Sun/Oracle-Version.</p>
+        <p>Als Datenbanken unterstützt <strong>aidGer</strong> sowohl MySQL als auch Derby. Derby is dabei im Lieferumfang enthalten und kann sofort eingesetzt werden. Um stattdessen jedoch eine MySQL-Datenbank zu benutzen, benötigen Sie MySQL 5.0 oder höher. MySQL ist die empfohlene Datenbank.</p>
+
+        <h2>Downloads</h2>
+
+        <table>
+            <tr>
+                <th>Programm (.jar)</th>
+                <th>Quellcode (.zip)</th>
+                <th>Handbuch (.pdf)</th>
+            </tr>
+            <tr>
+                <td><a href="http://aidger.de/attachments/download/98/aidger-1.0.jar">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/99/aidger-src-1.0.zip">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/100/Handbuch.pdf">Download</a></td>
+            </tr>
+        </table>
+
+        <a href="#unstable" onclick="$('#unstable').toggle(); return false;"> &gt;&gt; Instabile Versionen</a>
+        <div id="unstable">
+            <p>Um an eine instable Version von <strong>aidGer</strong> zu kommen gibt es mehrere Möglichkeiten.</p>
+            <ul>
+                <li>Die Versionsverwaltung von <strong>aidGer</strong>, siehe <a href="#">Link</a>,</li>
+                <li>Unseren Buildserver unter <a href="http://build.aidger.de">build.aidger.de</a>,</li>
+                <li>Oder kurz vor einem Release, eine der Betaversionen oder Releasecandidates im Downloadbereich unseres Issuetrackers <a href="http://aidger.de/files">hier</a></li>
+            </ul>
+        </div>
+
+        <h2>Anleitung</h2>
+
+            <p>Eine Installation ist nicht nötig. Wenn Ihre Distribution entsprechend konfiguriert ist können Sie <strong>aidGer</strong> mit einem Doppelklick auf die heruntergeladene Datei starten. Andernfalls benutzen Sie am Besten die Kommandozeile mit <i>java -jar aidger-1.0.jar</i>.</p>
+            <p>Beim ersten Start begrüßt Sie der Einrichtungsassistent und erlaubt Ihnen eine einfache Konfiguration der Datenbankverbindung und Ihres Namens.</p>
+            <p>Für mehr Informationen laden Sie sich das Handbuch herunter oder öffnen Sie es aus aidGer heraus über das Menü Hilfe -> Handbuch (rly?)</p>
+</div>
+
+<div id="mac">
+    <h2>Systemvorraussetzungen</h2>
+
+        <p>Wenn jemand Plan vom Apfel hat, dann immer her damit</p>
+
+    <h2>Downloads</h2>
+
+        <table>
+            <tr>
+                <th>Programm (.jar)</th>
+                <th>Quellcode (.zip)</th>
+                <th>Handbuch (.pdf)</th>
+            </tr>
+            <tr>
+                <td><a href="http://aidger.de/attachments/download/98/aidger-1.0.jar">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/99/aidger-src-1.0.zip">Download</a></td>
+                <td><a href="http://aidger.de/attachments/download/100/Handbuch.pdf">Download</a></td>
+            </tr>
+        </table>
+
+        <a href="#unstable" onclick="$('#unstable').toggle(); return false;"> &gt;&gt; Instabile Versionen</a>
+        <div id="unstable">
+            <p>Um an eine instable Version von <strong>aidGer</strong> zu kommen gibt es mehrere Möglichkeiten.</p>
+            <ul>
+                <li>Die Versionsverwaltung von <strong>aidGer</strong>, siehe <a href="#">Link</a>,</li>
+                <li>Unseren Buildserver unter <a href="http://build.aidger.de">build.aidger.de</a>,</li>
+                <li>Oder kurz vor einem Release, eine der Betaversionen oder Releasecandidates im Downloadbereich unseres Issuetrackers <a href="http://aidger.de/files">hier</a></li>
+            </ul>
+        </div>
+
+    <h2>Anleitung</h2>
+
+        <p>Wenn jemand Plan vom Apfel hat, dann immer her damit</p>
+</div>
+
+
+<script type="text/javascript">
+    function showDetails(id) {
+        var ids = [ 'windows', 'linux', 'mac' ];
+
+        $.each(ids, function(index, value) {
+            if (value != id)
+                $('#' + value).hide();
+            else
+                $('#' + value).show('slow');
+        });
+    }
+</script>
